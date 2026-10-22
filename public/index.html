@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <header class="topo">
+             <div>
+                <h1>Gestão de Clientes</h1>
+                <p>Gerencie seus clientes em um só lugar.</p>
+            </div>
+
+            <button id="btnTema" class="btn btn-secundario" type="button">
+                Tema escuro
+            </button>
+        </header>
+
+        <button id="btnNovoCliente" class="btn btn-primario">Cadastrar Cliente</button>
+
+        <div class="tabela-container">
+            <table id="tabelaClientes">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Data De Nascimento</th>
+                        <th>Data De Cadastro</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaClientes">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="modalCliente">
+        <div>
+            <form id="formCliente">
+                <h2>Cadastro de Cliente</h2>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" required>
+                <label for="data_nascimento">Nascimento</label>
+                <input type="date" id="data_nascimento">
+                <label for="status">Status</label>
+                <select id="status" name="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+
+                <button type="submit" class="btn btn-primario">Salvar</button>
+                <button type="button" id="btnCancelar" class="btn btn-secundario">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
