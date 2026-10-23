@@ -26,27 +26,26 @@ Aplicação web para gerenciamento de clientes, desenvolvida como projeto de est
 
 ### 1. Pré-requisitos
 
-Antes de começar, instale:
+Instale os seguintes programas:
 
 - [Node.js](https://nodejs.org/)
 - [MySQL](https://dev.mysql.com/downloads/installer/) ou [WampServer](https://www.wampserver.com/)
-
-Você também precisará do Git para clonar o repositório.
+- [Git](https://git-scm.com/)
 
 ### 2. Baixar o projeto
 
-Clone o repositório e entre na pasta do projeto:
+Clone o repositório:
 
 ```bash
 git clone URL_DO_SEU_REPOSITORIO
 cd sistema-de-cadastro-de-clientes
 ```
 
-Substitua `URL_DO_SEU_REPOSITORIO` pelo endereço real do repositório no GitHub.
+Substitua `URL_DO_SEU_REPOSITORIO` pelo endereço real do seu repositório no GitHub.
 
 ### 3. Instalar as dependências
 
-Na pasta do projeto, execute:
+Dentro da pasta do projeto, execute:
 
 ```bash
 npm install
@@ -54,15 +53,15 @@ npm install
 
 ### 4. Criar o banco de dados
 
-Abra seu cliente MySQL, como o DBeaver ou o MySQL Workbench, e execute o conteúdo do arquivo `banco.sql`.
+Abra o DBeaver, MySQL Workbench ou outro cliente MySQL e execute o arquivo `banco.sql`.
 
 Esse script cria o banco de dados e a tabela necessários para a aplicação.
 
 ### 5. Configurar as variáveis de ambiente
 
-Crie um arquivo chamado `.env` na pasta principal, utilizando o `.env.example` como modelo.
+Crie um arquivo `.env` na pasta principal, usando o `.env.example` como modelo.
 
-Preencha as variáveis com as configurações do seu MySQL:
+Configure os dados da sua instalação do MySQL:
 
 ```ini
 DB_HOST=localhost
@@ -72,9 +71,9 @@ DB_NAME=cadastro_clientes
 PORT=3000
 ```
 
-Substitua os valores de exemplo pelos dados da sua instalação. Se o MySQL não tiver senha configurada para esse usuário, deixe `DB_PASSWORD=` vazio.
+Substitua os valores de exemplo pelos dados do seu ambiente. Se o usuário não tiver senha configurada, deixe `DB_PASSWORD=` vazio.
 
-**Importante:** o arquivo `.env` contém configurações locais e não deve ser enviado ao GitHub.
+**Importante:** não envie o arquivo `.env` ao GitHub, pois ele contém configurações locais.
 
 ### 6. Iniciar o servidor
 
@@ -84,18 +83,23 @@ Execute:
 node server.js
 ```
 
-Quando o servidor estiver funcionando, acesse no navegador:
+Com o servidor funcionando, abra o navegador e acesse:
 
 http://localhost:3000
 
 ## Estrutura do projeto
 
 - `server.js` — servidor e rotas da API
-- `banco.sql` — script de criação do banco e da tabela
-- `public/` — arquivos HTML, CSS e JavaScript da interface
+- `banco.sql` — script de criação do banco de dados
+- `public/` — arquivos HTML, CSS e JavaScript
 - `.env.example` — modelo das variáveis de ambiente
 - `package.json` — dependências e informações do projeto
 
 ## Objetivo do projeto
 
-Projeto desenvolvido para consolidar conhecimentos em JavaScript, APIs REST, Node.js, Express, MySQL e controle de versão com Git.
+Projeto de estudo desenvolvido para consolidar conhecimentos em JavaScript, APIs REST, Node.js, Express, MySQL e controle de versão com Git.
+
+## Captura de tela
+
+![Tela do Sistema de Cadastro de Clientes](prints/tela-inicial.png)
+
