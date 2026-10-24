@@ -37,11 +37,9 @@ Instale os seguintes programas:
 Clone o repositório:
 
 ```bash
-git clone URL_DO_SEU_REPOSITORIO
+git clone Substitua https://github.com/danielcamposdossantos797-oss/sistema-de-cadastro-de-clientes.git pelo endereço real do seu repositório no GitHub.
 cd sistema-de-cadastro-de-clientes
 ```
-
-Substitua `https://github.com/danielcamposdossantos797-oss/sistema-de-cadastro-de-clientes.git` pelo endereço real do seu repositório no GitHub.
 
 ### 3. Instalar as dependências
 
