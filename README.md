@@ -41,7 +41,7 @@ git clone URL_DO_SEU_REPOSITORIO
 cd sistema-de-cadastro-de-clientes
 ```
 
-Substitua `URL_DO_SEU_REPOSITORIO` pelo endereço real do seu repositório no GitHub.
+Substitua `https://github.com/danielcamposdossantos797-oss/sistema-de-cadastro-de-clientes.git` pelo endereço real do seu repositório no GitHub.
 
 ### 3. Instalar as dependências
 
